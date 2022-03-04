@@ -1,6 +1,6 @@
 import './App.scss';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 
 import About from './pages/about';
@@ -17,8 +17,8 @@ function App() {
   return (
     <Router>
     <Navbar />
-    <Routes>
-      <Route path='/' component={Home} />
+    <Switch>
+      <Route path='/'  exact component={Home} />
       <Route path='/about' component={About} />
       <Route path='/contact' component={Contact} />
       <Route path='/events' component={Events} />
@@ -28,7 +28,7 @@ function App() {
       <Route path='/sign-up' component={SignUp} />
       <Route path='/signin' component={SignIn} />
   
-    </Routes>
+    </Switch>
     </Router>
   );
   }
