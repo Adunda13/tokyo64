@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
+@import "~bootstrap/scss/bootstrap";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+$tsHeaders: #fff;
+$tsMenu: #FFF;
+$tsMenuBottom:#394B7D;
+$topHeight:10px;
+$bottomHeight:10px;
+$smallBox: 80px;
+$tsText:rgba(0,0,0,.85);
+$tsMenuFontSize:24px;
+$tsMenuFontColor:#394b7d;
+$tsMenuFontWeight:600;
+$bodyBackground:#daddcd;
+$carouselWidth:100%;
+$tsTextShadow:1px 2px 2px #000;
+$tsImageBox:100%;
+$containerPadding:2%;
+$figure-caption-font-size:20px;
+$figure-caption-color:#000;
+$figure-caption-background:#999;
+$tsBottom:8.50rem;
+$tsIndicatorBottom:7.5rem;
+$tsJapanHeight:8vmin;
+$tsLinkColor:#394b7d;
+$textDecoration:none;
+$redText:#BD0029;
+$headerStyle: 1px 1px 2px #394b7d, 0 0 25px #394b7d, 0 0 5px #394b7d;
+$thumbnail-padding:.25rem;
+$thumbnail-bg:$body-bg;
+$thumbnail-border-width:$border-width;
+$thumbnail-border-color:$gray-300;
+$thumbnail-border-radius:$border-radius;
+$thumbnail-box-shadow:$box-shadow-sm;
+$pushDown:10%;
+$tsLineTop:2px solid #8c8b8b;
+$tsLineBottom:2px solid #fff;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  background-color:$bodyBackground ;
+  color:$tsText;
 }
-
-.App-link {
-  color: #61dafb;
+h1 {
+  color: $tsHeaders;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2 {
+   text-shadow: $tsTextShadow;
+}
+a {
+  color: $tsLinkColor;
+  text-decoration:$textDecoration ;
+}
+.thumbnailShot{
+  max-width:400px;
+}
+.headerStyle {
+  text-shadow: $headerStyle;
+}
+.tsMenu {
+  background-color: $tsMenu;
+}
+.tsMenuBottom, .tsMenuTop {
+  background-color: $tsMenuBottom;
+  height:$bottomHeight;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:$tsMenuFontColor;
+  font-size: $tsMenuFontSize;
+  font-weight: $tsMenuFontWeight;
+}
+.logoBox {
+  width:$smallBox;
+}
+.tsBlock {
+  width:$carouselWidth;
+}
+.fiveOnIt{
+  width:$carouselWidth;
+}
+.tsImageBox {
+ width:$tsImageBox;
+}
+.containerPadding
+{
+  padding:$containerPadding;
+}
+.figure-caption{
+  color:$figure-caption-color;
+  font-size: $figure-caption-font-size;
+  background-color:$figure-caption-background;
+  padding:$containerPadding;
+}
+.carousel-caption {
+  bottom:$tsBottom;
+}
+.carousel-indicators {
+  bottom:$tsIndicatorBottom;
+}
+.floatingJapan {
+height: $tsJapanHeight;
+}
+.pushDown {
+  margin-top:$pushDown;
+}
+.tsLine {
+ border-top:$tsLineTop;
+ border-bottom:$tsLineBottom;
 }
