@@ -1,5 +1,8 @@
 import React from 'react';
 import {Container, Accordion } from 'react-bootstrap';
+import japaneseCuisine from './japaneseCuisine.jpg';
+import ramenKerama from './ramenKerama.jpg';
+
 
 
 const Culture = () => {
@@ -12,10 +15,25 @@ return (
   <Accordion.Item eventKey="0">
     <Accordion.Header className="tsAccordionHeader">Japanese cuisine is the best in world!</Accordion.Header>
     <Accordion.Body>
-    In Tokyo there are better French restaurants than in Paris. You can get all kinds of good meals in Japan and 
+    <p>In Tokyo there are better French restaurants than in Paris. You can get all kinds of good meals in Japan and 
 	most restaurants are world class! There are many affordable places to eat too. They have menus for every budget 
 	from family restaurants to lunchtime bentos. It is one of the safest places in the world to eat too. In my over 11 years 
-	there I never got sick from eating anything.
+	there I never got sick from eating anything.</p>
+	<div class="row">
+      <div class="col">
+	  <figure>
+      <img className=" tsImageBox" src={japaneseCuisine} alt="tasty" />
+	  <figcaption class="figure-caption">A typical ceremonial home prepared meal.</figcaption>
+	  </figure>
+    </div>
+    <div class="col">
+	<figure>
+    <img className="tsImageBox" src={ramenKerama} alt="tasty" />
+	<figcaption class="figure-caption">Delicious ramen in Tokyo.</figcaption>
+
+	</figure>
+    </div>
+    </div>
     </Accordion.Body>
   </Accordion.Item>
   <Accordion.Item eventKey="1">

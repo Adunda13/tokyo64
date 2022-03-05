@@ -1,8 +1,7 @@
 import React from 'react';
 import {Container } from 'react-bootstrap';
-import japaneseCuisine from './japaneseCuisine.jpg';
-import ramenKerama from './ramenKerama.jpg';
-import tokyoTowerSky from './tokyoTowerSky.jpg';
+import akihabaraNight from './akihabaraNight.jpg';
+
 
 const Home = () => {
 return (
@@ -10,25 +9,38 @@ return (
 	<Container className="containerPadding">
         <h1 className="headerStyle">We are Tokyo 64!</h1>
 		<hr className="tsLine" />
-       <img src={tokyoTowerSky} alt="Shinjuku night"></img>
-
-
         <p>All things Japan! We are creating a great website to get you all the information you need on Japan, from visiting to immigrating and more.</p>
-      <div class="row">
-      <div class="col">
-	  <figure>
-      <img className=" tsImageBox" src={japaneseCuisine} alt="tasty" />
-	  <figcaption class="figure-caption">A typical ceremonial home prepared meal.</figcaption>
-	  </figure>
-    </div>
-    <div class="col">
-	<figure>
-    <img className="tsImageBox" src={ramenKerama} alt="tasty" />
-	<figcaption class="figure-caption">Delicious ramen in Tokyo.</figcaption>
 
-	</figure>
+        <div class="card-group">
+  <div class="card">
+      <img src={akihabaraNight} className="card-img-top" alt="Shinjuku night"></img>
+    <div class="card-body">
+      <h5 class="card-title">Akihabara</h5>
+      <p class="card-text">Tokyo's electric town!</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
+  </div>
+  <div class="card">
+  <img src={akihabaraNight} className="card-img-top" alt="Shinjuku night"></img>
+    <div class="card-body">
+      <h5 class="card-title">Akihabara</h5>
+      <p class="card-text">There are more than just electronics.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
+  </div>
+  <div class="card">
+  <img src={akihabaraNight} className="card-img-top" alt="Shinjuku night"></img>
+    <div class="card-body">
+      <h5 class="card-title">Akihabara</h5>
+      <p class="card-text">Lots of good places to eat.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+  
+
+
+    
       </Container>
 	</div>
 );
