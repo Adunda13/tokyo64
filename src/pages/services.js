@@ -1,12 +1,11 @@
 import React from 'react';
 import {Container, Accordion } from 'react-bootstrap';
-
-const Immigrate = () => {
-return (
-	<div>
+const Services = () => {
+    return (
+        <div>
 	<Container className="containerPadding">
 
-	<h1 className="headerStyle">How to immigrate to Japan</h1>
+	<h1 className="headerStyle">Services</h1>
 	<hr className="tsLine" />
 	<Accordion defaultActiveKey="0">
   <Accordion.Item eventKey="0">
@@ -35,9 +34,11 @@ return (
   </Accordion.Item>
 </Accordion>
 
+
 	</Container>
 	</div>
-);
-};
 
-export default Immigrate;
+    );
+}
+
+export default Services;

@@ -7,7 +7,6 @@ NavMenu,
 NavBtn,
 NavBtnLink,
 } from './NavbarElements';
-import { GiJapan } from 'react-icons/gi';
 import logo from './logo.jpg';
 
 const Navbar = () => {
@@ -16,19 +15,14 @@ return (
 	<Nav>	
 	   <Bars />
 		<NavMenu>
-	
-
 		<NavLink to='/' activeStyle>
         <img className="logoBox" src={logo} alt="Tokyo 64 logo"/>
-		</NavLink> 
-	
-	
+		</NavLink> 	
 		<NavLink to='/about' activeStyle>
 			About
-		</NavLink>	
-	
-		<NavLink to='/art' activeStyle>
-			Art
+		</NavLink>		
+		<NavLink to='/culture' activeStyle>
+			Culture
 		</NavLink>
 		<NavLink to='/contact' activeStyle>
 			Contact Us
@@ -39,13 +33,15 @@ return (
 		<NavLink to='/immigrate' activeStyle>
 			Immigrate
 		</NavLink>
+		<NavLink to='/services' activeStyle>
+			Services
+		</NavLink>
 		<NavLink to='/sign-up' activeStyle>
             Sign Up
           </NavLink>
 		
 		{/* Second Nav */}
 		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-		<h1><GiJapan className='floatingJapan' /></h1> 
 
 		</NavMenu>
 		<NavBtn>

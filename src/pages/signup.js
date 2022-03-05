@@ -1,17 +1,30 @@
 import React from 'react';
-import {Container } from 'react-bootstrap';
-
+import { Container } from 'react-bootstrap';
 const SignUp= () => {
 return (
 	<div>
-	<Container className="containerPadding">
-
-	<h1 className="headerStyle">Join Our Club</h1>
+    <Container className="containerPadding">
+	<h1 className="headerStyle">Join us!</h1>
 	<hr className="tsLine" />
-	<p>More to come.</p>
+	<p>Secure pages coming soon!</p>
 
-
-	</Container>
+	<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" />
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</Container>
 	</div>
 );
 };

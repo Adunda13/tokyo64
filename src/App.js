@@ -5,12 +5,13 @@ import Home from './pages';
 
 import About from './pages/about';
 import Events from './pages/events';
-import Art from './pages/art';
+import Culture from './pages/culture';
 import Contact from './pages/contact';
 import Immigrate from './pages/immigrate';
 import Places from './pages/places';
 import SignUp from './pages/signup';
 import SignIn from './pages/signin';
+import Services from './pages/services'
 
 
 function App() {
@@ -22,9 +23,10 @@ function App() {
       <Route path='/about' component={About} />
       <Route path='/contact' component={Contact} />
       <Route path='/events' component={Events} />
-      <Route path='/art' component={Art} />
+      <Route path='/culture' component={Culture} />
       <Route path='/immigrate' component={Immigrate} />
       <Route path='/places' component={Places} />
+      <Route path='/services' component={Services}/>
       <Route path='/sign-up' component={SignUp} />
       <Route path='/signin' component={SignIn} />  
     </Switch>
