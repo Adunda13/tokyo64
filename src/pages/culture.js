@@ -13,7 +13,7 @@ return (
 	<hr className="tsLine" />
 	<Accordion defaultActiveKey="0">
   <Accordion.Item eventKey="0">
-    <Accordion.Header className="tsAccordionHeader">Japanese cuisine is the best in world!</Accordion.Header>
+    <Accordion.Header className="tsAccordionHeader">Japanese cuisine is the best in the world!</Accordion.Header>
     <Accordion.Body>
     <p>In Tokyo there are better French restaurants than in Paris. You can get all kinds of good meals in Japan and 
 	most restaurants are world class! There are many affordable places to eat too. They have menus for every budget 
