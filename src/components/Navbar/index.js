@@ -1,13 +1,13 @@
 import React from 'react';
-import {Container, Nav,Navbar, NavDropdown,Button} from 'react-bootstrap';
+import {Container, Nav,Navbar, NavDropdown,Button,Form,FormControl} from 'react-bootstrap';
 import logo from './logo.jpg';
 
 const Navbox = () => {
 return (
 	<>
-<Navbar className="tsMenu" expand="lg">
+<Navbar className="tsMenu navbar-fixed-top" expand="lg" >
   <Container>
-    <Navbar.Brand href="/"><span className="logoText">Tokyo</span><img className="logoBox" src={logo} alt="Tokyo 64" /><span className="logoText">64</span></Navbar.Brand>
+    <Navbar.Brand href="/"><span className="logoText">Tokyo</span><img className="logoBox" src={logo} alt="Tokyo 64" /><span className="logoText">'64</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav>
@@ -24,9 +24,17 @@ return (
 		<Nav.Link  href='/events'>Events</Nav.Link>
 		<Nav.Link  href='/immigrate'>Immigrate</Nav.Link>
 		<Nav.Link  href='/services'>Services</Nav.Link>
-	    <Nav.Link><Button className="tsNavButton" href='/sign-up'>Sign Up</Button></Nav.Link>        
 		
       </Nav>
+      <Form className="d-flex">
+        <FormControl
+          type="search"
+          placeholder="Search"
+          className="me-2"
+          aria-label="Search"
+        />
+        <Button variant="outline-success">Search</Button>
+      </Form>
     </Navbar.Collapse>
   </Container>
 </Navbar>

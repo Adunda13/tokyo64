@@ -1,8 +1,8 @@
 import './App.scss';
 import Navbar from './components/Navbar';
+import Top from './components/Footer/Top.js';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
-
 import About from './pages/about';
 import Events from './pages/events';
 import Culture from './pages/culture';
@@ -30,6 +30,7 @@ function App() {
       <Route path='/sign-up' component={SignUp} />
       <Route path='/signin' component={SignIn} />  
     </Switch>
+    <Top/>
     </Router>
   );
   }
