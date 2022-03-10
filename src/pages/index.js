@@ -3,7 +3,7 @@ import {Container,Figure,CardGroup,Card } from 'react-bootstrap';
 import shinkjukuCool from './shinjukuCool.jpg';
 import harajukuStreet from './harajukuStreet.jpg';
 import nakamiseDori from './nakamiseDori.jpg';
-import skyTree from './skyTree.JPG';
+import skyTree from './skyTree.jpg';
 
 const Home = () => {
 return (
