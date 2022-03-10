@@ -3,7 +3,7 @@ import {Container,Figure,CardGroup,Card } from 'react-bootstrap';
 import shinkjukuCool from './shinjukuCool.jpg';
 import harajukuStreet from './harajukuStreet.jpg';
 import nakamiseDori from './nakamiseDori.jpg';
-import skyTree from './skyTree.jpg';
+import skytree from './skytree.jpg';
 
 const Home = () => {
 return (
@@ -25,7 +25,7 @@ return (
 
   <CardGroup className="homeCard">
   <Card className="containerPadding">
-    <Card.Img variant="top" src={skyTree} alt="Tokyo Skytree"/>
+    <Card.Img variant="top" src={skytree} alt="Tokyo Skytree"/>
     <Card.Body>
       <Card.Title>Tokyo Skytree</Card.Title>
       <Card.Text>
