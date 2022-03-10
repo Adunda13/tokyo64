@@ -3,7 +3,6 @@ import {Container,Figure,CardGroup,Card } from 'react-bootstrap';
 import shinkjukuCool from './shinjukuCool.jpg';
 import harajukuStreet from './harajukuStreet.jpg';
 import nakamiseDori from './nakamiseDori.jpg';
-import skytree from './skytree.jpg';
 
 const Home = () => {
 return (
@@ -24,15 +23,7 @@ return (
         <p>All things Japan! We are creating a great website to get you all the information you need on Japan, from visiting to immigrating and more.</p>
 
   <CardGroup className="homeCard">
-  <Card className="containerPadding">
-    <Card.Img variant="top" src={skytree} alt="Tokyo Skytree"/>
-    <Card.Body>
-      <Card.Title>Tokyo Skytree</Card.Title>
-      <Card.Text>
-       The view from here is breathtaking. This new icon is viewable from most parts of the metropolis.
-      </Card.Text>
-    </Card.Body>
-  </Card>
+
   <Card className="containerPadding">
     <Card.Img variant="top" src={harajukuStreet} alt="Starbucks Shibuya" />
     <Card.Body>
