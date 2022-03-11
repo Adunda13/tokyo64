@@ -1,8 +1,8 @@
 import React from 'react';
-import {Container,CardGroup,Card} from 'react-bootstrap';
+import {Container,CardGroup,Card, Row, Col} from 'react-bootstrap';
 import shibuyaCrossing from './shibuyaCrossing.jpg';
-import starbucksShibuya from './starbucksShibuya.jpg';
-import nakamiseDori from './nakamiseDori.jpg';
+import ueno from './ueno.jpg';
+import skyTree from './skyTree.jpg';
 
 
 const Top =() => {
@@ -10,8 +10,8 @@ const Top =() => {
         <>
         <div class="topFooterBorder"></div>
         <div class="topFooter">
-        <Container className="containerPadding">        
-        <h2>Other places to see</h2>
+        <Container fluid className="containerPadding">        
+        <h4>Other places to see</h4>
         <CardGroup className="topCard">
   <Card className="containerPadding">
     <Card.Img variant="top" src={shibuyaCrossing} alt="Shibuya Crossing"/>
@@ -24,28 +24,33 @@ const Top =() => {
 
   </Card>
   <Card className="containerPadding">
-    <Card.Img variant="top" src={starbucksShibuya} alt="Starbucks Shibuya" />
+    <Card.Img variant="top" src={ueno} alt="Ueno" />
     <Card.Body>
-      <Card.Title>Shibuya Starbucks</Card.Title>
+      <Card.Title>Ueno</Card.Title>
       <Card.Text>
-       Shibuya Starbucks is one of the busiest in the world!
+       Ueno has a lot to see with the park, the zoo, and the museums along with Ameyokocho's bargain shops and eateries.
       </Card.Text>
     </Card.Body>
    
   </Card>
   <Card className="containerPadding">
-    <Card.Img variant="top" src={nakamiseDori} alt="Nakamise Dori" />
+    <Card.Img variant="top" src={skyTree} alt="Tokyo Skytree" />
     <Card.Body>
-      <Card.Title>Nakamise Dori</Card.Title>
+      <Card.Title>Tokyo Skytree</Card.Title>
       <Card.Text>
-      Nakamisedori in Tokyo's Asakusa.
+      The view from here is stunning! It can be seen from all over the metropolis.
       </Card.Text>
     </Card.Body>
 
   </Card>
 </CardGroup>
+<Row>
+    <Col><h5>National and Local Transportation Systems</h5></Col>
+    <Col><h5>Popular Places to visit</h5></Col>
+    <Col><h5>Recommended News Sources</h5></Col>
+</Row>
 
-        <p className="tsCopy">Copyright&#169;Tokyo '64 All rights reserved.</p>
+        <p className="tsCopy">Copyright &copy; 2022 Tokyo '64 All Rights Reserved.</p>
   
 
 

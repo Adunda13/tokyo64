@@ -1,23 +1,22 @@
 import React from 'react';
 import {Container,Figure,CardGroup,Card } from 'react-bootstrap';
-import shinkjukuCool from './shinjukuCool.jpg';
 import harajukuStreet from './harajukuStreet.jpg';
 import nakamiseDori from './nakamiseDori.jpg';
+import starbucksShibuya from './starbucksShibuya.jpg';
 
 const Home = () => {
 return (
 	<div>
 
 <Figure>
-  <Figure.Image
-    width={1600}
-    height={550}
-    alt="171x180"
-    src={shinkjukuCool}
+  <Figure.Image 
+ 
+    alt="Shinjuku"
+    src={starbucksShibuya}
   />
  
 </Figure>
-	<Container className="containerPadding">
+	<Container fluid className="containerPadding">
         <h1 className="headerStyle">We are Tokyo '64!</h1>
 		<hr className="tsLine" />
         <p>All things Japan! We are creating a great website to get you all the information you need on Japan, from visiting to immigrating and more.</p>
