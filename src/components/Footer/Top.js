@@ -45,7 +45,7 @@ const Top =() => {
   </Card>
 </CardGroup>
 
-        
+        <p className="tsCopy">Copyright&#169;Tokyo '64 All rights reserved.</p>
   
 
 

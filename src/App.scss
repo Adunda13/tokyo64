@@ -204,8 +204,18 @@ height: $tsJapanHeight;
   flex: 1 1 auto;
   padding: 1rem 0rem;
 }
-.card-img-top {
+.card-group > .card .card-img-top {
   border-radius:$smallBorderRadius;
+}
+.card-group > .card:first-child .card-img-top {
+  border-radius:$smallBorderRadius;
+}
+.card-group > .card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) .card-header {
+  border-top-left-radius: $smallBorderRadius;
+}
+.tsCopy{
+  color:$tsMenu;
+  text-shadow:$tsTextShadow;
 }
 
 
