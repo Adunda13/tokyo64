@@ -5,8 +5,8 @@ import logo from './logo.jpg';
 const Navbox = () => {
 return (
 	<>
-<Navbar className="tsMenu navbar-fixed-top" expand="lg" >
-  <Container fluid>
+<Navbar className="tsMenu sticky-nav" expand="lg" >
+  <Container className="navMenu" fluid>
     <Navbar.Brand href="/"><span className="logoText">Tokyo</span><img className="logoBox" src={logo} alt="Tokyo 64" /><span className="logoText">'64</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

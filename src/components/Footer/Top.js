@@ -1,8 +1,11 @@
 import React from 'react';
-import {Container,CardGroup,Card, Row, Col} from 'react-bootstrap';
+import {Container,CardGroup,Card, Row, Col, ListGroup} from 'react-bootstrap';
 import shibuyaCrossing from './shibuyaCrossing.jpg';
 import ueno from './ueno.jpg';
 import skyTree from './skyTree.jpg';
+import TokyoMetro from './TokyoMetro.js';
+import OsakaMetro from './OsakaMetro.js';
+import SapporoTransit from './SapporoTransit.js';
 
 
 const Top =() => {
@@ -44,11 +47,30 @@ const Top =() => {
 
   </Card>
 </CardGroup>
-<Row>
-    <Col><h5>National and Local Transportation Systems</h5></Col>
+		<hr className="tsLine" />
+
+<Row className="footerText">
+    <Col><h5>National Transportation</h5>
+    </Col>    
+    <Col><h5>Local Transportation</h5>
+    <ListGroup variant="flush">
+  <ListGroup.Item><TokyoMetro /></ListGroup.Item>
+  <ListGroup.Item><OsakaMetro /></ListGroup.Item>
+  <ListGroup.Item><SapporoTransit /></ListGroup.Item>
+  <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+</ListGroup>
+    
+
+
+
+</Col>
     <Col><h5>Popular Places to visit</h5></Col>
     <Col><h5>Recommended News Sources</h5></Col>
+
 </Row>
+		<hr className="tsLine" />
+
 
         <p className="tsCopy">Copyright &copy; 2022 Tokyo '64 All Rights Reserved.</p>
   

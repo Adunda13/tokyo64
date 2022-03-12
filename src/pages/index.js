@@ -6,11 +6,10 @@ import starbucksShibuya from './starbucksShibuya.jpg';
 
 const Home = () => {
 return (
-	<div>
+<div>
 
 <Figure>
-  <Figure.Image 
- 
+  <Figure.Image  
     alt="Shinjuku"
     src={starbucksShibuya}
   />
@@ -43,12 +42,9 @@ return (
 
   </Card>
 </CardGroup>
-  
-
-
-    
-      </Container>
-	</div>
+      
+</Container>
+</div>
 );
 };
 

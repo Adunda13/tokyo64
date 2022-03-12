@@ -3,6 +3,15 @@
 $tsHeaders: #394b7d;
 $tsFontWeight:600;
 $tsMenu: #FFF;
+$tsNavWidth:1280px;
+$tsNavPadding:0 68px;
+$tsNavMargin:0 auto;
+$tsNavJustify:space-between;
+$tsNavWebFlex:-webkit-flex;
+$tsNavFlex:flex;
+$tsWhiteFontColor:#fff;
+$tsMenuFixed:sticky;
+$tsMenuPosition:0;
 $tsMenuBottom:#394B7D;
 $topHeight:4px;
 $bottomHeight:4px;
@@ -60,6 +69,7 @@ $input-btn-font-size-lg:      $font-size-lg;
 $input-btn-border-width:      $border-width;
 $transition-collapse:         height .35s ease;
 $cardImgSize:50%;
+$tsPositiveZindex:999;
 
 
 body {
@@ -69,7 +79,7 @@ body {
 h1 {
   color: $tsHeaders;
 }
-h4, h5 {
+h4 {
    text-shadow: $tsTextShadow;
    color:$tsMenu;
 }
@@ -147,8 +157,6 @@ height: $tsJapanHeight;
 }
 .accordion-button:focus {
   border-color: $tsAccordionBorder;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
 .logoText{
   color:$redText;
@@ -217,5 +225,25 @@ height: $tsJapanHeight;
   color:$tsMenu;
   text-shadow:$tsTextShadow;
 }
+.sticky-nav {
+  position:$tsMenuFixed;
+  top:$tsMenuPosition;
+  z-index:$tsPositiveZindex;
+}
+.footerText{
+  color:$tsWhiteFontColor;
+}
+.navMenu{
+  max-width:$tsNavWidth;
+  padding:$tsNavPadding;
+  display:$tsNavWebFlex,$tsNavFlex;
+  justify-content:$tsNavJustify;
+  margin:$tsNavMargin;
+}
+.list-group-item {
+  background-color:$tsMenuBottom;
+}
+
+
 
 
