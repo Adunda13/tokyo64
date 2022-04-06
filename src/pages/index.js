@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container,Figure,CardGroup,Card } from 'react-bootstrap';
+import {Container,CardGroup,Button,Card,Row } from 'react-bootstrap';
 import harajukuStreet from './harajukuStreet.jpg';
 import nakamiseDori from './nakamiseDori.jpg';
 import starbucksShibuya from './starbucksShibuya.jpg';
@@ -8,13 +8,18 @@ const Home = () => {
 return (
 <div>
 
-<Figure>
-  <Figure.Image  
-    alt="Shinjuku"
-    src={starbucksShibuya}
-  />
- 
-</Figure>
+<section className="topHome">
+<Row>
+
+<div className="col-lg-7 topHomeLeft">
+<img  src={starbucksShibuya}  alt="Shibuya Starbucks" />
+</div>
+<div className="col-lg-5 topHomeRight">
+  <h1>We know Japan!</h1>
+  <p>We've been into Japan for a long time. The creator of this website lived in Japan for over 11 years! And has been to almost 20 prefectures.</p>
+  <Button href="/about" type="button">Learn more</Button>
+</div>
+</Row></section>
 	<Container fluid className="containerPadding">
         <h1 className="headerStyle">We are Tokyo '64!</h1>
 		<hr className="tsLine" />

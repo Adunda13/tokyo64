@@ -1,31 +1,16 @@
-import { Button,Modal} from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import React from 'react';
-import { useState } from 'react';
-import {BsFillCaretRightFill} from 'react-icons/bs';
+import TokyoMetroLogo from './Tokyo_Metro_logo.png';
 
 const TokyoMetro = () => {
-    const [show, setShow] = useState(false); 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+
   
     return (
       <>
-        <Button variant="primary" size="sm" onClick={handleShow}>
-          Tokyo Metro 
-        </Button>
-  
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Tokyo Metro</Modal.Title>
-          </Modal.Header>
-          <Modal.Body><h5><BsFillCaretRightFill /><a href="https://www.tokyometro.jp/en/">Tokyo Metro</a></h5></Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-       
-          </Modal.Footer>
-        </Modal>
+      <Container className="tabBody">
+        <a href="https://www.metrolinemap.com/metro/tokyo/">Tokyo Metro</a>
+        <img src={TokyoMetroLogo} alt="Tokyo Metro Combined Logo"/>
+        </Container>
       </>
     );
   }

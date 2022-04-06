@@ -1,15 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 
 $tsHeaders: #394b7d;
+$tsBlueBackgroundHeader:#fff;
 $tsFontWeight:600;
 $tsMenu: #FFF;
+$btnFontColor:#fff;
+$btnPrimaryBackground:#526BB0;
+$btnPrimaryHover:#41568F;
+$btnPrimaryHoverBorder:#41568f;
+$btnPrimaryFocus:#4960a0;
+$btnBoxShadow:0px 1px 2px #000;
+$btnBorderColor:#394b7d;
 $tsNavWidth:1280px;
 $tsNavPadding:0 68px;
 $tsNavMargin:0 auto;
 $tsNavJustify:space-between;
 $tsNavWebFlex:-webkit-flex;
 $tsNavFlex:flex;
-$tsWhiteFontColor:#fff;
+$tsWhite:#fff;
+$tsWhiteBody:#fff;
 $tsMenuFixed:sticky;
 $tsMenuPosition:0;
 $tsMenuBottom:#394B7D;
@@ -21,6 +30,7 @@ $tsMenuFontSize:16px;
 $tsMenuFontColor:#394b7d;
 $tsMenuFontWeight:600;
 $bodyBackground:#daddcd;
+$backgroundBlue:#394B7D;
 $carouselWidth:100%;
 $tsTextShadow:1px 2px 2px #000;
 $tsImageBox:100%;
@@ -70,6 +80,12 @@ $input-btn-border-width:      $border-width;
 $transition-collapse:         height .35s ease;
 $cardImgSize:50%;
 $tsPositiveZindex:999;
+$borderLess:none;
+$centerText:center;
+$topHomeLeftPadding:5% 2% 5% 3%;
+$firstThreeFivePad: 9% 5% 5% 0;
+$fiveBorderRadius:5px;
+$whiteBorder:2px solid #fff;
 
 
 body {
@@ -231,7 +247,7 @@ height: $tsJapanHeight;
   z-index:$tsPositiveZindex;
 }
 .footerText{
-  color:$tsWhiteFontColor;
+  color:$tsWhite;
 }
 .navMenu{
   max-width:$tsNavWidth;
@@ -242,6 +258,50 @@ height: $tsJapanHeight;
 }
 .list-group-item {
   background-color:$tsMenuBottom;
+  border:$borderLess;
+}
+.btn-primary {
+  color: $btnFontColor;
+  background-color: $btnPrimaryBackground;
+  border-color: $btnBorderColor;
+  box-shadow: $btnBoxShadow;
+}
+.btn-primary:hover {
+  background-color:$btnPrimaryHover;
+  border:$btnPrimaryHoverBorder;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: $btnFontColor;
+  background-color: $btnPrimaryFocus;
+  border-color: $btnPrimaryFocus;
+  box-shadow: $btnBoxShadow;
+}
+.topHome{
+  background-color: $backgroundBlue;
+}
+.topHome h1 {
+  color:$tsBlueBackgroundHeader;
+  text-shadow:$tsTextShadow;
+}
+.topHome {
+  color:$tsBlueBackgroundHeader;
+}
+.topHomeLeft{
+    padding:$topHomeLeftPadding;
+
+}
+.topHomeRight{
+  padding:$firstThreeFivePad;
+}
+.tabFooter title{
+  border:$whiteBorder;
+}
+
+.tabBody{
+  background-color: $tsWhiteBody;
+}
+img{
+  border-radius:$fiveBorderRadius;
 }
 
 

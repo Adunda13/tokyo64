@@ -1,11 +1,20 @@
 import React from 'react';
-import {Container,CardGroup,Card, Row, Col, ListGroup} from 'react-bootstrap';
+import {Container,CardGroup,Card,Tab,Tabs} from 'react-bootstrap';
 import shibuyaCrossing from './shibuyaCrossing.jpg';
 import ueno from './ueno.jpg';
 import skyTree from './skyTree.jpg';
 import TokyoMetro from './TokyoMetro.js';
 import OsakaMetro from './OsakaMetro.js';
 import SapporoTransit from './SapporoTransit.js';
+import KyotoMunicipalSubway from './KyotoMunicipalSubway';
+import FukuokaCitySubway from './FukuokaCitySubway';
+import NagoyaMunicipalSubway from './NagoyaMunicipalSubway';
+import SendaiSubway from './SendaiSubway';
+import ToeiSubway from './ToeiSubway';
+import YokohamaMunicipalSubway from './YokohamaMunicipalSubway';
+
+
+
 
 
 const Top =() => {
@@ -49,26 +58,41 @@ const Top =() => {
 </CardGroup>
 		<hr className="tsLine" />
 
-<Row className="footerText">
-    <Col><h5>National Transportation</h5>
-    </Col>    
-    <Col><h5>Local Transportation</h5>
-    <ListGroup variant="flush">
-  <ListGroup.Item><TokyoMetro /></ListGroup.Item>
-  <ListGroup.Item><OsakaMetro /></ListGroup.Item>
-  <ListGroup.Item><SapporoTransit /></ListGroup.Item>
-  <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
-  <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-</ListGroup>
-    
+<Container className="footerText">
+<h4>Local Subway Lines</h4><br></br>
 
+<Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="tabFooter">
+  <Tab eventKey="tokyoMetro" title="Tokyo Metro">
+  <TokyoMetro />
+  </Tab>
+  <Tab eventKey="toeiSubway" title="Toei Subway">
+  <ToeiSubway />
+  </Tab>
+  <Tab eventKey="yokohamaMunicipalSubway" title="Yokohama Municipal Subway">
+  <YokohamaMunicipalSubway />
+  </Tab>
+  <Tab eventKey="osakaMetro" title="Osaka Metro">
+  <OsakaMetro />
+  </Tab>
+  <Tab eventKey="sapporoTransit" title="Sapporo Transit">
+  <SapporoTransit />
+  </Tab>
+  <Tab eventKey="kyotoMunicipalSubway" title="Kyoto Municipal Subway">
+  <KyotoMunicipalSubway/>
+  </Tab>
+  <Tab eventKey="fukuokaCitySubway" title="Fukuoka City Subway">
+  <FukuokaCitySubway />
+  </Tab>
+  <Tab eventKey="nagoyaMunicipalSubway" title="Nagoya Municipal Subway">
+  <NagoyaMunicipalSubway />
+  </Tab>
+  <Tab eventKey="sendaiSubway" title="Sendai Subway">
+  <SendaiSubway />
+  </Tab>
+</Tabs>
+   
 
-
-</Col>
-    <Col><h5>Popular Places to visit</h5></Col>
-    <Col><h5>Recommended News Sources</h5></Col>
-
-</Row>
+</Container>
 		<hr className="tsLine" />
 
 
