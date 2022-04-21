@@ -6,7 +6,7 @@ const SendaiSubway = () => {
   return (
     <>
     <Container className="tabBody">
-      <a href="https://www.metrolinemap.com/metro/yokohama/"> Nagoya Municipal Subway </a>
+      <a href="https://www.kotsu.city.sendai.jp/images/sbway/route_map.pdf"> Sendai City Subway </a>
       <img src={SendaiCitySubwayLogo} alt="Sendai City Subway Logo"/>
     </Container>
     </>
