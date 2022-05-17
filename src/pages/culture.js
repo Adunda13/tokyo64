@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Accordion } from 'react-bootstrap';
-import japaneseCuisine from './japaneseCuisine.jpg';
-import ramenKerama from './ramenKerama.jpg';
+import japaneseCuisine from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/japaneseCuisine.jpg';
+import ramenKerama from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/ramenKerama.jpg';
 
 
 

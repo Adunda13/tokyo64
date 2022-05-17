@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container } from 'react-bootstrap';
-import meInYokohama from './meInYokohama.jpg';
-import osakaGlico from './osakaGlico.jpg';
-import teachNova from './teachNova.jpg';
+import meInYokohama from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/meInYokohama.jpg';
+import osakaGlico from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/osakaGlico.jpg';
+import teachNova from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/teachNova.jpg';
 
 const About = () => {
 return (
