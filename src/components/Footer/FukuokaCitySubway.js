@@ -1,6 +1,6 @@
 import { Container} from 'react-bootstrap';
 import React from 'react';
-import FukuokaCitySubwayLogo from 'https://s3.console.aws.amazon.com/s3/object/tokyo64.com?region=us-west-2&prefix=fukuokaCitySubway.jpg';
+import FukuokaCitySubwayLogo from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/fukuokaCitySubway.jpg';
 
 const FukuokaCitySubway = () => {
   
