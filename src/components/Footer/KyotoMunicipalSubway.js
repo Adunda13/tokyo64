@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
 import React from 'react';
-import KyotoMunicipalSubwayLogo from './kyotoSubwayLogo.png';
+import KyotoMunicipalSubwayLogo from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/kyotoSubwayLogo.png';
 
 const KyotoMunicipalSubway = () => {
   return (

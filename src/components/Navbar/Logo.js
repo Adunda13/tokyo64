@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.jpg';
+import logo from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/logo.jpg';
 
 function Logo() {
     return (
