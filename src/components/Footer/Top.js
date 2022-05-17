@@ -1,8 +1,7 @@
 import React from 'react';
 import {Container,CardGroup,Card,Tab,Tabs} from 'react-bootstrap';
-import shibuyaCrossing from './shibuyaCrossing.jpg';
-import ueno from './ueno.jpg';
-import skyTree from './skyTree.jpg';
+import shibuyaCrossing from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/shibuyaCrossing.jpg';
+import ueno from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/ueno.jpg';
 import TokyoMetro from './TokyoMetro.js';
 import OsakaMetro from './OsakaMetro.js';
 import SapporoTransit from './SapporoTransit.js';
@@ -39,20 +38,9 @@ const Top =() => {
     <Card.Body>
       <Card.Title>Ueno</Card.Title>
       <Card.Text>
-       Ueno has a lot to see with the park, the zoo, and the museums along with Ameyokocho's bargain shops and eateries.
-      </Card.Text>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-3C7NE5C6Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </Card.Text>
     </Card.Body>
    
-  </Card>
-  <Card className="containerPadding">
-    <Card.Img variant="top" src={skyTree} alt="Tokyo Skytree" />
-    <Card.Body>
-      <Card.Title>Tokyo Skytree</Card.Title>
-      <Card.Text>
-      The view from here is stunning! It can be seen from all over the metropolis.
-      </Card.Text>
-    </Card.Body>
-
   </Card>
 </CardGroup>
 		<hr className="tsLine" />
