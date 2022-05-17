@@ -5,16 +5,12 @@ import ueno from 'https://s3.us-west-2.amazonaws.com/tokyo64.com/ueno.jpg';
 import TokyoMetro from './TokyoMetro.js';
 import OsakaMetro from './OsakaMetro.js';
 import SapporoTransit from './SapporoTransit.js';
-import KyotoMunicipalSubway from './KyotoMunicipalSubway';
-import FukuokaCitySubway from './FukuokaCitySubway';
-import NagoyaMunicipalSubway from './NagoyaMunicipalSubway';
-import SendaiSubway from './SendaiSubway';
-import ToeiSubway from './ToeiSubway';
-import YokohamaMunicipalSubway from './YokohamaMunicipalSubway';
-
-
-
-
+import KyotoMunicipalSubway from './KyotoMunicipalSubway.js';
+import FukuokaCitySubway from './FukuokaCitySubway.js';
+import NagoyaMunicipalSubway from './NagoyaMunicipalSubway.js';
+import SendaiSubway from './SendaiSubway.js';
+import ToeiSubway from './ToeiSubway.js';
+import YokohamaMunicipalSubway from './YokohamaMunicipalSubway.js';
 
 const Top =() => {
     return (
@@ -81,13 +77,8 @@ const Top =() => {
 
 </Container>
 		<hr className="tsLine" />
-
-
-        <p className="tsCopy">Copyright &copy; 2022 Tokyo '64 All Rights Reserved.</p>
-  
-
-
-        </Container>
+        <p className="tsCopy">Copyright &copy; 2022 Tokyo '64 All Rights Reserved.</p>  
+</Container>
         </div>
         </>
     );
