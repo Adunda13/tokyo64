@@ -1,0 +1,308 @@
+@import "~bootstrap/scss/bootstrap";
+
+$tsHeaders: #394b7d;
+$tsBlueBackgroundHeader:#fff;
+$tsFontWeight:600;
+$tsMenu: #FFF;
+$btnFontColor:#fff;
+$btnPrimaryBackground:#526BB0;
+$btnPrimaryHover:#41568F;
+$btnPrimaryHoverBorder:#41568f;
+$btnPrimaryFocus:#4960a0;
+$btnBoxShadow:0px 1px 2px #000;
+$btnBorderColor:#394b7d;
+$tsNavWidth:1280px;
+$tsNavPadding:0 68px;
+$tsNavMargin:0 auto;
+$tsNavJustify:space-between;
+$tsNavWebFlex:-webkit-flex;
+$tsNavFlex:flex;
+$tsWhite:#fff;
+$tsWhiteBody:#fff;
+$tsMenuFixed:sticky;
+$tsMenuPosition:0;
+$tsMenuBottom:#394B7D;
+$topHeight:4px;
+$bottomHeight:4px;
+$smallBox: 80px;
+$tsText:rgba(0,0,0,.85);
+$tsMenuFontSize:16px;
+$tsMenuFontColor:#394b7d;
+$tsMenuFontWeight:600;
+$bodyBackground:#daddcd;
+$backgroundBlue:#394B7D;
+$carouselWidth:100%;
+$tsTextShadow:1px 2px 2px #000;
+$tsImageBox:100%;
+$containerPadding:2%;
+$figure-caption-font-size:20px;
+$figure-caption-color:#000;
+$figure-caption-background:#999;
+$tsBottom:8.50rem;
+$tsIndicatorBottom:7.5rem;
+$tsJapanHeight:8vmin;
+$tsLinkColor:#394b7d;
+$tsAccordionHeader:#394b7d;
+$tsAccordionBorder:#394b7d;
+$textDecoration:none;
+$redText:#BD0029;
+$smallBorderRadius:5px;
+$headerStyle: 1px 1px 2px #fff;
+$thumbnail-padding:.25rem;
+$thumbnail-bg:$body-bg;
+$thumbnail-border-width:$border-width;
+$thumbnail-border-color:$gray-300;
+$thumbnail-border-radius:$border-radius;
+$thumbnail-box-shadow:$box-shadow-sm;
+$pushDown:10%;
+$tsLineTop:2px solid #8c8b8b;
+$tsLineBottom:2px solid #fff;
+$topFooterBorder:2px solid #fff;
+$tsNavButtonHover:#fff;
+$tsNavButtonBorder:none;
+$input-btn-padding-y:         .375rem;
+$input-btn-padding-x:         .75rem;
+$input-btn-font-family:       null;
+$input-btn-font-size:         $font-size-base;
+$input-btn-line-height:       $line-height-base;
+$input-btn-focus-width:         .25rem;
+$input-btn-focus-color-opacity: .25;
+$input-btn-focus-color:         rgba($component-active-bg, $input-btn-focus-color-opacity);
+$input-btn-focus-blur:          0;
+$input-btn-focus-box-shadow:    0 0 $input-btn-focus-blur $input-btn-focus-width $input-btn-focus-color;
+$input-btn-padding-y-sm:      .25rem;
+$input-btn-padding-x-sm:      .5rem;
+$input-btn-font-size-sm:      $font-size-sm;
+$input-btn-padding-y-lg:      .5rem;
+$input-btn-padding-x-lg:      1rem;
+$input-btn-font-size-lg:      $font-size-lg;
+$input-btn-border-width:      $border-width;
+$transition-collapse:         height .35s ease;
+$cardImgSize:50%;
+$tsPositiveZindex:999;
+$borderLess:none;
+$centerText:center;
+$topHomeLeftPadding:5% 2% 5% 3%;
+$firstThreeFivePad: 9% 5% 5% 0;
+$fiveBorderRadius:5px;
+$whiteBorder:2px solid #fff;
+
+
+body {
+  background-color:$bodyBackground ;
+  color:$tsText;
+}
+h1 {
+  color: $tsHeaders;
+}
+h4 {
+   text-shadow: $tsTextShadow;
+   color:$tsMenu;
+}
+a {
+  color: $tsLinkColor;
+  text-decoration:$textDecoration ;
+}
+.thumbnailShot{
+  max-width:400px;
+}
+.headerStyle {
+  text-shadow: $headerStyle;
+}
+.tsMenu {
+  background-color: $tsMenu;
+}
+.tsMenuBottom, .tsMenuTop {
+  background-color: $tsMenuBottom;
+  height:$bottomHeight;
+}
+.navbar-light .navbar-nav .nav-link {
+  color:$tsMenuFontColor;
+  font-size: $tsMenuFontSize;
+  font-weight: $tsMenuFontWeight;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color:$redText;
+}
+.logoBox {
+  width:$smallBox;
+}
+.tsBlock {
+  width:$carouselWidth;
+}
+.fiveOnIt{
+  width:$carouselWidth;
+}
+.tsImageBox {
+ width:$tsImageBox;
+}
+.containerPadding
+{
+  padding:$containerPadding;
+}
+.figure-caption{
+  color:$figure-caption-color;
+  font-size: $figure-caption-font-size;
+  background-color:$figure-caption-background;
+  padding:$containerPadding;
+}
+.carousel-caption {
+  bottom:$tsBottom;
+}
+.carousel-indicators {
+  bottom:$tsIndicatorBottom;
+}
+.floatingJapan {
+height: $tsJapanHeight;
+}
+.pushDown {
+  margin-top:$pushDown;
+}
+.tsLine {
+ border-top:$tsLineTop;
+ border-bottom:$tsLineBottom;
+}
+.accordion-button.collapsed  {
+  background-color: $tsAccordionHeader;
+  color:$tsHeaders;
+  font-weight:$tsFontWeight;
+
+}
+.accordion-button:not(.collapsed) {
+  color:$tsAccordionHeader;
+}
+.accordion-button:focus {
+  border-color: $tsAccordionBorder;
+}
+.logoText{
+  color:$redText;
+  font-size:$tsMenuFontSize;
+  font-weight:$tsMenuFontWeight;
+}
+.tsNavButton {
+  background-color: $tsLinkColor;
+  border-color:$tsMenuFontColor ;
+  font-weight: $tsMenuFontWeight;
+
+}
+.tsNavButton:hover {
+  background-color: $tsNavButtonHover;
+  border-color:$tsMenuFontColor ;
+  color:$redText;
+  font-weight: $tsMenuFontWeight;
+
+}
+.topFooter{
+  background-color: $tsMenuBottom;
+  height:$tsImageBox;
+}
+.topFooterBorder {
+  border:$topFooterBorder; 
+}
+.btn-outline-success {
+  color:$tsMenu;
+  background-color: $tsLinkColor;
+  border-color:$tsMenuFontColor ;
+  font-weight: $tsMenuFontWeight;
+}
+.btn-outline-success:hover {
+  background-color: $tsNavButtonHover;
+  border-color:$tsMenuFontColor ;
+  color:$redText;
+  font-weight: $tsMenuFontWeight;
+
+}
+.cardImgSize {
+  width:$cardImgSize;
+}
+.homeCard > .card{
+  background-color:$bodyBackground ;
+  border:$tsAccordionBorder
+}
+.topCard > .card{
+  background-color: $tsMenuBottom;
+  color:$tsMenu;
+  border:$tsAccordionBorder;
+}
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 0rem;
+}
+.card-group > .card .card-img-top {
+  border-radius:$smallBorderRadius;
+}
+.card-group > .card:first-child .card-img-top {
+  border-radius:$smallBorderRadius;
+}
+.card-group > .card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) .card-header {
+  border-top-left-radius: $smallBorderRadius;
+}
+.tsCopy{
+  color:$tsMenu;
+  text-shadow:$tsTextShadow;
+}
+.sticky-nav {
+  position:$tsMenuFixed;
+  top:$tsMenuPosition;
+  z-index:$tsPositiveZindex;
+}
+.footerText{
+  color:$tsWhite;
+}
+.navMenu{
+  max-width:$tsNavWidth;
+  padding:$tsNavPadding;
+  display:$tsNavWebFlex,$tsNavFlex;
+  justify-content:$tsNavJustify;
+  margin:$tsNavMargin;
+}
+.list-group-item {
+  background-color:$tsMenuBottom;
+  border:$borderLess;
+}
+.btn-primary {
+  color: $btnFontColor;
+  background-color: $btnPrimaryBackground;
+  border-color: $btnBorderColor;
+  box-shadow: $btnBoxShadow;
+}
+.btn-primary:hover {
+  background-color:$btnPrimaryHover;
+  border:$btnPrimaryHoverBorder;
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: $btnFontColor;
+  background-color: $btnPrimaryFocus;
+  border-color: $btnPrimaryFocus;
+  box-shadow: $btnBoxShadow;
+}
+.topHome{
+  background-color: $backgroundBlue;
+}
+.topHome h1 {
+  color:$tsBlueBackgroundHeader;
+  text-shadow:$tsTextShadow;
+}
+.topHome {
+  color:$tsBlueBackgroundHeader;
+}
+.topHomeLeft{
+    padding:$topHomeLeftPadding;
+
+}
+.topHomeRight{
+  padding:$firstThreeFivePad;
+}
+.tabFooter title{
+  border:$whiteBorder;
+}
+
+.tabBody{
+  background-color: $tsWhiteBody;
+}
+img{
+  border-radius:$fiveBorderRadius;
+}
+
+
+
