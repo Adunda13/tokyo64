@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Nav,Navbar, NavDropdown,Button,Form,FormControl} from 'react-bootstrap';
-import logo from '../../Logo.js';
+import logo from './Logo.js';
 
 const Navbox = () => {
 return (
