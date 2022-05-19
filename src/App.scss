@@ -1,4 +1,5 @@
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "~bootstrap/scss/bootstrap";
+
 $tsHeaders: #394b7d;
 $tsBlueBackgroundHeader:#fff;
 $tsFontWeight:600;
@@ -302,6 +303,7 @@ height: $tsJapanHeight;
 img{
   border-radius:$fiveBorderRadius;
 }
+
 
 
 
