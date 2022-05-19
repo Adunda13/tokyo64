@@ -1,20 +1,16 @@
 import './App.css';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
+import Home from './pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          The new Tokyo 64
-        </a>
-      </header>
-    </div>
+   <Router>
+     <Navbar />
+     <Routes>
+     <Route path='/'  exact component={Home} />
+     </Routes>
+   </Router>
   );
 }
 
