@@ -1,13 +1,12 @@
 import React from 'react';
 import {Container, Nav,Navbar, NavDropdown,Button,Form,FormControl} from 'react-bootstrap';
-import logo from './Logo.js';
 
 const Navbox = () => {
 return (
 	<>
 <Navbar className="tsMenu sticky-nav" expand="lg" >
   <Container className="navMenu" fluid>
-    <Navbar.Brand href="/"><span className="logoText">Tokyo</span><img className="logoBox" src={logo} alt="Tokyo 64" /><span className="logoText">'64</span></Navbar.Brand>
+    <Navbar.Brand href="/"><span className="logoText">Tokyo</span><img className="logoBox" src="https://s3.us-west-2.amazonaws.com/tokyo64.com/logo.jpg" alt="Tokyo 64" /><span className="logoText">'64</span></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav>
