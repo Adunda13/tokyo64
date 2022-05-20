@@ -79,6 +79,7 @@ $input-btn-font-size-lg:      $font-size-lg;
 $input-btn-border-width:      $border-width;
 $transition-collapse:         height .35s ease;
 $cardImgSize:50%;
+$topImgSize:100%;
 $tsPositiveZindex:999;
 $borderLess:none;
 $centerText:center;
@@ -288,8 +289,8 @@ height: $tsJapanHeight;
 }
 .topHomeLeft{
     padding:$topHomeLeftPadding;
-
 }
+.topHomeLeft img {width:$topImgSize}
 .topHomeRight{
   padding:$firstThreeFivePad;
 }

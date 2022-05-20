@@ -7,7 +7,6 @@ return (
 <div>
 <Container className="containerPadding">
 
-
   <h1 className="headerStyle">About Us!</h1>  
   <hr className="tsLine" />
 
@@ -31,14 +30,14 @@ return (
 	  to know the layout really well and I still miss it today. I try to get back to Osaka as much as I can. </p>
     </div>
     <div className="col">
-    <img src={'https://s3.us-west-2.amazonaws.com/tokyo64.com/osakaGlico.jpg'} className="rounded thumbnailShot" alt="Osaka minami"/>
+    <img src="https://s3.us-west-2.amazonaws.com/tokyo64.com/osakaGlico.jpg" className="rounded thumbnailShot" alt="Osaka minami"/>
     </div>
     
     
   </div>
   <div className="row">
   <div className="col">
-    <img src={'https://s3.us-west-2.amazonaws.com/tokyo64.com/teachNova.jpg'} className="rounded thumbnailShot" alt="Teach at Nova"/>
+    <img src="https://s3.us-west-2.amazonaws.com/tokyo64.com/teachNova.jpg" className="rounded thumbnailShot" alt="Teach at Nova"/>
     </div>
   	<div className="col-7">
       <p className="pushDown">I taught at Nova when I lived in Osaka. Nova at the time was the largest private language school in Japan. 

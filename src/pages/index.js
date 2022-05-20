@@ -4,10 +4,8 @@ import {Container,CardGroup,Button,Card,Row } from 'react-bootstrap';
 const Home = () => {
 return (
 <div>
-
 <section className="topHome">
 <Row>
-
 <div className="col-lg-7 topHomeLeft">
 <img  src={'https://s3.us-west-2.amazonaws.com/tokyo64.com/shibuyaCrossing.jpg'}  alt="Shibuya Crossing" />
 </div>
