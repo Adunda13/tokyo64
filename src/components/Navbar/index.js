@@ -22,7 +22,7 @@ return (
 		<Nav.Link  href='/contact'>Contact Us</Nav.Link>
 		<Nav.Link  href='/events'>Events</Nav.Link>
 		<Nav.Link  href='/immigrate'>Immigrate</Nav.Link>
-		<Nav.Link  href='/services'>Services</Nav.Link>
+		<Nav.Link  href='/places'>Places</Nav.Link>
 		
       </Nav>
       <Form className="d-flex">

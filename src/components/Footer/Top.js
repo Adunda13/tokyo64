@@ -16,21 +16,18 @@ const Top =() => {
         <div class="topFooterBorder"></div>
         <div class="topFooter">
         <Container fluid className="containerPadding">        
-        <h4>Other places to see</h4>
+        <h4>Featured videos on Japan</h4>
+        <p class="tsBlueBackgroundText">These videos were done by Video Street View Japan, please like and subscribe to the channel.</p>
         <CardGroup className="topCard">
   <Card className="containerPadding">
-    <Card.Img variant="top" src={'https://s3.us-west-2.amazonaws.com/tokyo64.com/shibuyaCrossing.jpg'} alt="Shibuya Crossing"/>
     <Card.Body>
-      <Card.Title>Shibuya Crossing</Card.Title>
       <Card.Text>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5XUr55OmPL8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </Card.Text>
     </Card.Body>
 
   </Card>
   <Card className="containerPadding">
-    <Card.Img variant="top" src={'https://s3.us-west-2.amazonaws.com/tokyo64.com/ueno.jpg'} alt="Ueno" />
     <Card.Body>
-      <Card.Title>Ueno</Card.Title>
       <Card.Text>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-3C7NE5C6Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>      </Card.Text>
     </Card.Body>

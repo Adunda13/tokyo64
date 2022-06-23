@@ -9,7 +9,7 @@ import Contact from './pages/contact';
 import Culture from './pages/culture';
 import Events from './pages/events';
 import Immigrate from './pages/immigrate';
-import Services from './pages/services';
+import Places from './pages/places';
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Route path='/culture' element={<Culture/>} />
       <Route path='/events' element={<Events/>} />
       <Route path='/immigrate' element={<Immigrate/>} />
-      <Route path='/services' element={<Services/>} />
+      <Route path='/places' element={<Places/>} />
 
 
 

@@ -113,6 +113,7 @@ a {
 .tsMenu {
   background-color: $tsMenu;
 }
+.tsBlueBackgroundText{color:$tsMenu;}
 .tsMenuBottom, .tsMenuTop {
   background-color: $tsMenuBottom;
   height:$bottomHeight;
@@ -213,9 +214,9 @@ height: $tsJapanHeight;
   font-weight: $tsMenuFontWeight;
 
 }
-.cardImgSize {
+/*.cardImgSize {
   width:$cardImgSize;
-}
+}*/
 .homeCard > .card{
   background-color:$bodyBackground ;
   border:$tsAccordionBorder
@@ -229,7 +230,7 @@ height: $tsJapanHeight;
   flex: 1 1 auto;
   padding: 1rem 0rem;
 }
-.card-group > .card .card-img-top {
+/*.card-group > .card .card-img-top {
   border-radius:$smallBorderRadius;
 }
 .card-group > .card:first-child .card-img-top {
@@ -237,7 +238,7 @@ height: $tsJapanHeight;
 }
 .card-group > .card:not(:first-child) .card-img-top, .card-group > .card:not(:first-child) .card-header {
   border-top-left-radius: $smallBorderRadius;
-}
+}*/
 .tsCopy{
   color:$tsMenu;
   text-shadow:$tsTextShadow;
@@ -303,6 +304,9 @@ height: $tsJapanHeight;
 }
 img{
   border-radius:$fiveBorderRadius;
+}
+.img-fluid{
+  box-shadow:$btnBoxShadow;
 }
 
 
